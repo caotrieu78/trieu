@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int i, n;
+    float P;
+    i = 1;
+    P = 1;
+    do
+    {
+        printf("\nNhap n: ");
+        scanf("%d", &n);
+        if(n < 1)
+        {
+            printf("\nN phai lon hon hoac bang 1. Xin nhap lai !");
+        }
+    }while(n < 1);
+
+    while(i < n)
+    {
+        P = P * i;
+        i++;
+    }
+    printf("\nTich 1x2x....x%d la: %0.2f", i, P);
+
+    getch();
+    return 0;
+}
